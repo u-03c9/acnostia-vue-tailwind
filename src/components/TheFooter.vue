@@ -1,32 +1,37 @@
 <script setup lang="ts">
-import FacebookIcon from "../assets/footer/facebook.webp";
-import TwitterIcon from "../assets/footer/twitter.webp";
-import GoogleIcon from "../assets/footer/google.webp";
-import LinkedinIcon from "../assets/footer/linkedin.webp";
+import BaseIcon from "../base/BaseIcon.vue";
 </script>
 
 <template>
   <div class="w-full bg-[#68a097] py-10">
     <div class="w-fit flex flex-row mx-auto justify-between gap-10">
-      <img
-        class="hover:opacity-90 cursor-pointer"
-        :src="FacebookIcon"
-        alt="facebook"
+      <BaseIcon
+        color="#82c7bc"
+        hoverColor="#4f689e"
+        href="https://facebook.com"
+        iconUrl="src/assets/footer/facebook.webp"
+        size="4rem"
       />
-      <img
-        class="hover:opacity-90 cursor-pointer"
-        :src="TwitterIcon"
-        alt="twitter"
+      <BaseIcon
+        color="#82c7bc"
+        hoverColor="#74c7d5"
+        href="https://twitter.com"
+        iconUrl="src/assets/footer/twitter.webp"
+        size="4rem"
       />
-      <img
-        class="hover:opacity-90 cursor-pointer"
-        :src="GoogleIcon"
-        alt="google"
+      <BaseIcon
+        color="#82c7bc"
+        hoverColor="#df5c64"
+        href="https://google.com"
+        iconUrl="src/assets/footer/google.webp"
+        size="4rem"
       />
-      <img
-        class="hover:opacity-90 cursor-pointer"
-        :src="LinkedinIcon"
-        alt="linkedin"
+      <BaseIcon
+        color="#82c7bc"
+        hoverColor="#3e61af"
+        href="https://linkedin.com"
+        iconUrl="src/assets/footer/linkedin.webp"
+        size="4rem"
       />
     </div>
   </div>
