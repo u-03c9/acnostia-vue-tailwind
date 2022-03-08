@@ -49,13 +49,13 @@ const data = {
     <template v-slot:default>
       <div class="w-full">
         <div class="mt-16">
-          <span class="text-3xl font-medium py-2 px-10 bg-[#a1ca6c] rounded">
+          <span class="text-2xl md:text-3xl font-medium w-full py-2 px-4 md:px-10 bg-[#a1ca6c] rounded">
             MEET THE TEAM
           </span>
           <div class="triangle-down w-full mx-auto"></div>
         </div>
 
-        <div class="w-full grid gap-5 grid-cols-4 mt-14">
+        <div class="w-full grid gap-5 md:grid-cols-2 lg:grid-cols-4 mt-14">
           <!-- card loop -->
           <div
             class="card w-full bg-[#4d3f4b] opacity-70 hover:opacity-100 pt-12 pb-8 rounded"
@@ -65,7 +65,7 @@ const data = {
             <h3 class="uppercase mt-3 text-2xl font-bold">{{ name }}</h3>
             <p class="text-[#a1ca6c] text-sm mt-1">{{ title }}</p>
 
-            <div class="icons w-full flex justify-between px-14 pt-8">
+            <div class="icons w-fit flex justify-between pt-8 mx-auto gap-2 lg:gap-4">
               <img class="cursor-pointer facebook" :src="FacebookPic" alt="facebock" />
               <img class="cursor-pointer twitter" :src="TwitterPic" alt="twitter" />
               <img class="cursor-pointer google" :src="GooglePic" alt="google" />
