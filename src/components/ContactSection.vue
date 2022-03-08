@@ -2,7 +2,8 @@
 import { reactive } from "vue";
 
 const data = {
-  title: "contact us",
+  id: "contacts",
+  title: "CONTACT US",
   description: `Crass suscipit porttitor. Morbi sit amet tincidunt sapien. Curabitur
     posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper
     quis libero et, ultricies commodo est. Quisque at ante vitae justo fermentum
@@ -22,6 +23,7 @@ const formData = reactive({
 
 <template>
   <BaseSection
+    :id="data.id"
     :title="data.title"
     :description="data.description"
     :descriptionColor="data.descriptionColor"

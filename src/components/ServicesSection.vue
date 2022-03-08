@@ -27,6 +27,7 @@ const cards = [
 ];
 
 const data = {
+  id: "services",
   title: "OUR SERVICES",
   description: `Crass suscipit porttitor. Morbi sit amet tincidunt sapien. Curabitur
     posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper
@@ -41,6 +42,7 @@ const data = {
 
 <template>
   <BaseSection
+    :id="data.id"
     :title="data.title"
     :description="data.description"
     :descriptionColor="data.descriptionColor"

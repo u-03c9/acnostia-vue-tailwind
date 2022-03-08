@@ -26,6 +26,7 @@ const cards = [
 ];
 
 const data = {
+  id: "about",
   title: "WHO WE ARE & WHAT WE DO",
   description: `Crass suscipit porttitor. Morbi sit amet tincidunt sapien. Curabitur
     posuere lectus aliquet erat rutrum sollicitudin. In enim diam, ullamcorper
@@ -40,6 +41,7 @@ const data = {
 
 <template>
   <BaseSection
+    :id="data.id"
     :title="data.title"
     :description="data.description"
     :descriptionColor="data.descriptionColor"
@@ -49,7 +51,9 @@ const data = {
     <template v-slot:default>
       <div class="w-full">
         <div class="mt-16">
-          <span class="text-2xl md:text-3xl font-medium w-full py-2 px-4 md:px-10 bg-[#a1ca6c] rounded">
+          <span
+            class="text-2xl md:text-3xl font-medium w-full py-2 px-4 md:px-10 bg-[#a1ca6c] rounded"
+          >
             MEET THE TEAM
           </span>
           <div class="triangle-down w-full mx-auto"></div>
@@ -65,11 +69,29 @@ const data = {
             <h3 class="uppercase mt-3 text-2xl font-bold">{{ name }}</h3>
             <p class="text-[#a1ca6c] text-sm mt-1">{{ title }}</p>
 
-            <div class="icons w-fit flex justify-between pt-8 mx-auto gap-2 lg:gap-4">
-              <img class="cursor-pointer facebook" :src="FacebookPic" alt="facebock" />
-              <img class="cursor-pointer twitter" :src="TwitterPic" alt="twitter" />
-              <img class="cursor-pointer google" :src="GooglePic" alt="google" />
-              <img class="cursor-pointer linkedin" :src="LinkedinPic" alt="linkedin" />
+            <div
+              class="icons w-fit flex justify-between pt-8 mx-auto gap-2 lg:gap-4"
+            >
+              <img
+                class="cursor-pointer facebook"
+                :src="FacebookPic"
+                alt="facebock"
+              />
+              <img
+                class="cursor-pointer twitter"
+                :src="TwitterPic"
+                alt="twitter"
+              />
+              <img
+                class="cursor-pointer google"
+                :src="GooglePic"
+                alt="google"
+              />
+              <img
+                class="cursor-pointer linkedin"
+                :src="LinkedinPic"
+                alt="linkedin"
+              />
             </div>
           </div>
           <!-- end of card loop -->
