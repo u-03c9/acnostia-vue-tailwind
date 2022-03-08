@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import ProfilePic from "../assets/about/profile.webp";
-import FacebookPic from "../assets/about/facebook.webp";
-import TwitterPic from "../assets/about/twitter.webp";
-import GooglePic from "../assets/about/google.webp";
-import LinkedinPic from "../assets/about/linkedin.webp";
 import BaseSection from "../base/BaseSection.vue";
+import BaseIcon from "../base/BaseIcon.vue";
 
 const cards = [
   {
@@ -72,24 +69,36 @@ const data = {
             <div
               class="icons w-fit flex justify-between pt-8 mx-auto gap-2 lg:gap-4"
             >
-              <img
-                class="cursor-pointer facebook"
-                :src="FacebookPic"
-                alt="facebock"
+              <BaseIcon
+                color="#a1859e"
+                hoverColor="#4f689e"
+                href="https://facebook.com"
+                iconUrl="src/assets/about/facebook.webp"
+                size="1.75rem"
+                alt="facebook"
               />
-              <img
-                class="cursor-pointer twitter"
-                :src="TwitterPic"
+              <BaseIcon
+                color="#a1859e"
+                hoverColor="#74c7d5"
+                href="https://twitter.com"
+                iconUrl="src/assets/about/twitter.webp"
+                size="1.75rem"
                 alt="twitter"
               />
-              <img
-                class="cursor-pointer google"
-                :src="GooglePic"
+              <BaseIcon
+                color="#a1859e"
+                hoverColor="#df5c64"
+                href="https://google.com"
+                iconUrl="src/assets/about/google.webp"
+                size="1.75rem"
                 alt="google"
               />
-              <img
-                class="cursor-pointer linkedin"
-                :src="LinkedinPic"
+              <BaseIcon
+                color="#a1859e"
+                hoverColor="#3e61af"
+                href="https://linkedin.com"
+                iconUrl="src/assets/about/linkedin.webp"
+                size="1.75rem"
                 alt="linkedin"
               />
             </div>
@@ -117,17 +126,5 @@ const data = {
 }
 .card:hover .profile {
   filter: hue-rotate(40deg) saturate(300%) brightness(150%);
-}
-.facebook:hover {
-  filter: hue-rotate(280deg) saturate(270%) contrast(130%) brightness(90%);
-}
-.twitter:hover {
-  filter: hue-rotate(270deg) saturate(270%) brightness(120%);
-}
-.google:hover {
-  filter: hue-rotate(40deg) saturate(200%) contrast(150%);
-}
-.linkedin:hover {
-  filter: hue-rotate(280deg) saturate(280%) contrast(250%) brightness(90%);
 }
 </style>
