@@ -56,10 +56,12 @@ const data = {
     </template>
     <template #default>
       <div class="w-full">
-        <div class="mt-16 w-full grid gap-5 grid-cols-4">
+        <div
+          class="mt-16 w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5"
+        >
           <!-- card loop -->
           <div
-            class="pt-12 pb-8 card w-full bg-[#c45158] hover:bg-[#c45f66] rounded"
+            class="pt-12 pb-8 px-4 card w-full bg-[#c45158] hover:bg-[#c45f66] rounded"
             v-for="{ title, description, picUrl } in cards"
           >
             <img class="mx-auto icon" :src="picUrl" alt="service pic" />
