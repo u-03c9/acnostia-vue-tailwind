@@ -1,20 +1,20 @@
 <script setup lang="ts">
 import { computed, ref } from "vue";
-import AngleLeftSVG from "../base/AngleLeftSVG.vue";
-import AngleRightSVG from "../base/AngleRightSVG.vue";
+import AngleLeftSVG from "../assets/AngleLeftSVG.vue";
+import AngleRightSVG from "../assets/AngleRightSVG.vue";
 
 const slides = [
   {
     id: 0,
-    url: "src/assets/home/slide-0.webp",
+    url: "/home/slide-0.webp",
   },
   {
     id: 1,
-    url: "src/assets/home/slide-1.webp",
+    url: "/home/slide-1.webp",
   },
   {
     id: 2,
-    url: `src/assets/home/slide-2.webp`,
+    url: `/home/slide-2.webp`,
   },
 ];
 

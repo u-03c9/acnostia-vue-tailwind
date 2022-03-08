@@ -4,25 +4,25 @@ const cards = [
     title: "researching",
     description: `Praesent interdum blandit quam. Asunt in anim uis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore.`,
-    picUrl: "src/assets/services/icon-lightbulb.webp",
+    picUrl: "/services/icon-lightbulb.webp",
   },
   {
     title: "design",
     description: `Praesent interdum blandit quam. Asunt in anim uis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore.`,
-    picUrl: "src/assets/services/icon-wand.webp",
+    picUrl: "/services/icon-wand.webp",
   },
   {
     title: "development",
     description: `Praesent interdum blandit quam. Asunt in anim uis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore.`,
-    picUrl: "src/assets/services/icon-gears.webp",
+    picUrl: "/services/icon-gears.webp",
   },
   {
     title: "launch",
     description: `Praesent interdum blandit quam. Asunt in anim uis aute irure
                 dolor in reprehenderit in voluptate velit esse cillum dolore.`,
-    picUrl: "src/assets/services/icon-rocket.webp",
+    picUrl: "/services/icon-rocket.webp",
   },
 ];
 
@@ -36,7 +36,7 @@ const data = {
     quis.`,
   descriptionColor: "#e6d1e3",
   backgroundColor: "#b24a50",
-  backgroundLayer: "src/assets/services/layer.webp",
+  backgroundLayer: "/services/layer.webp",
 };
 </script>
 

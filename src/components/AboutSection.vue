@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import ProfilePic from "../assets/about/profile.webp";
 import BaseSection from "../base/BaseSection.vue";
 import BaseIcon from "../base/BaseIcon.vue";
 
@@ -32,7 +31,7 @@ const data = {
     quis.`,
   descriptionColor: "#e6d1e3",
   backgroundColor: "#675565",
-  backgroundLayer: "src/assets/about/layer.webp",
+  backgroundLayer: "/about/layer.webp",
 };
 </script>
 
@@ -62,7 +61,11 @@ const data = {
             class="card w-full bg-[#4d3f4b] opacity-70 hover:opacity-100 pt-12 pb-8 rounded drop-shadow-md"
             v-for="{ name, title } in cards"
           >
-            <img class="mx-auto profile" :src="ProfilePic" alt="Profile pic" />
+            <img
+              class="mx-auto profile"
+              src="/about/profile.webp"
+              alt="Profile pic"
+            />
             <h3 class="uppercase mt-3 text-2xl font-bold">{{ name }}</h3>
             <p class="text-[#a1ca6c] text-sm mt-1">{{ title }}</p>
 
@@ -73,7 +76,7 @@ const data = {
                 color="#a1859e"
                 hoverColor="#4f689e"
                 href="https://facebook.com"
-                iconUrl="src/assets/about/facebook.webp"
+                iconUrl="/about/facebook.webp"
                 size="1.75rem"
                 alt="facebook"
               />
@@ -81,7 +84,7 @@ const data = {
                 color="#a1859e"
                 hoverColor="#74c7d5"
                 href="https://twitter.com"
-                iconUrl="src/assets/about/twitter.webp"
+                iconUrl="/about/twitter.webp"
                 size="1.75rem"
                 alt="twitter"
               />
@@ -89,7 +92,7 @@ const data = {
                 color="#a1859e"
                 hoverColor="#df5c64"
                 href="https://google.com"
-                iconUrl="src/assets/about/google.webp"
+                iconUrl="/about/google.webp"
                 size="1.75rem"
                 alt="google"
               />
@@ -97,7 +100,7 @@ const data = {
                 color="#a1859e"
                 hoverColor="#3e61af"
                 href="https://linkedin.com"
-                iconUrl="src/assets/about/linkedin.webp"
+                iconUrl="/about/linkedin.webp"
                 size="1.75rem"
                 alt="linkedin"
               />

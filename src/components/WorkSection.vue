@@ -2,35 +2,35 @@
 const cards = [
   {
     title: "aenean a elit",
-    picUrl: "src/assets/work/items/item-0.webp",
+    picUrl: "/work/items/item-0.webp",
   },
   {
     title: "aliquam",
-    picUrl: "src/assets/work/items/item-1.webp",
+    picUrl: "/work/items/item-1.webp",
   },
   {
     title: "suspendisse libero",
-    picUrl: "src/assets/work/items/item-2.webp",
+    picUrl: "/work/items/item-2.webp",
   },
   {
     title: "maecenas fingilla",
-    picUrl: "src/assets/work/items/item-3.webp",
+    picUrl: "/work/items/item-3.webp",
   },
   {
     title: "donec vehicula",
-    picUrl: "src/assets/work/items/item-4.webp",
+    picUrl: "/work/items/item-4.webp",
   },
   {
     title: "ut et sapien",
-    picUrl: "src/assets/work/items/item-5.webp",
+    picUrl: "/work/items/item-5.webp",
   },
   {
     title: "quis malesada",
-    picUrl: "src/assets/work/items/item-6.webp",
+    picUrl: "/work/items/item-6.webp",
   },
   {
     title: "vestibulum ante",
-    picUrl: "src/assets/work/items/item-7.webp",
+    picUrl: "/work/items/item-7.webp",
   },
 ];
 
@@ -44,7 +44,7 @@ const data = {
     quis.`,
   descriptionColor: "#fff",
   backgroundColor: "#81a256",
-  backgroundLayer: "src/assets/work/layer.webp",
+  backgroundLayer: "/work/layer.webp",
 };
 </script>
 

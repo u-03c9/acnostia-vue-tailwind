@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref } from "vue";
-import LogoImg from "../assets/header/logo.webp";
-import SolidBarsIcon from "../base/SolidBarsSVG.vue";
+import SolidBarsIcon from "../assets/SolidBarsSVG.vue";
 
 const nav = [
   {
@@ -96,7 +95,7 @@ const smallScreenMenuExtraClass = computed(() => {
       >
         <div class="cursor-pointer pt-6 h-[30px] w-[151px]">
           <a href="#home" class="cursor-pointer">
-            <img :src="LogoImg" alt="logo" class="" />
+            <img src="/header/logo.webp" alt="logo" class="" />
           </a>
         </div>
         <nav class="">

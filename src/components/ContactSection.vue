@@ -11,7 +11,7 @@ const data = {
     quis.`,
   descriptionColor: "#fff",
   backgroundColor: "#75b4aa",
-  backgroundLayer: "src/assets/about/layer.webp",
+  backgroundLayer: "/about/layer.webp",
 };
 
 const formData = reactive({
@@ -108,7 +108,7 @@ const formData = reactive({
 
 <style scoped>
 .map {
-  background-image: url("../assets/contact/map.webp");
+  background-image: url("/contact/map.webp");
   background-position: center;
   background-size: 155%;
   background-repeat: no-repeat;
