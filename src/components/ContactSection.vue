@@ -29,18 +29,18 @@ const formData = reactive({
     :backgroundLayer="data.backgroundLayer"
   >
     <template v-slot>
-      <div class="w-full mt-14 flex flex-row gap-5 text-left">
-        <div class="basis-1/2">
+      <div class="w-full mt-14 grid grid-cols-1 lg:grid-cols-2 gap-5 text-left">
+        <div class="">
           <h2 class="text-3xl">Address</h2>
           <!-- details -->
-          <div class="mt-3 flex flex-row">
+          <div class="mt-3 grid grid-cols-1 md:grid-cols-2">
             <div class="basis-1/2 flex flex-col justify-between">
               <div class="">
                 <h3 class="text-xl text-[#c0dfda]">Acrostia</h3>
                 <p class="mt-2">Sevenoaks Rd</p>
                 <p>Sevenoaks TN14 7HR, UK</p>
               </div>
-              <div class="">
+              <div class="pt-6 md:pt-0">
                 <div class="flex">
                   <div class="col mr-8 text-[#c0dfda]">
                     <p>Phone:</p>
@@ -58,17 +58,17 @@ const formData = reactive({
               </div>
             </div>
             <!-- map -->
-            <div class="basis-1/2">
+            <div class="basis-1/2 pt-12 md:pt-0">
               <div class="map w-full h-64 border-dashed border-2"></div>
             </div>
           </div>
         </div>
         <!-- contact form -->
-        <div class="basis-1/2">
+        <div class="">
           <h2 class="text-3xl">Ask a Question</h2>
           <form @submit.prevent class="mt-3 w-full">
-            <div class="flex flex-col gap-5">
-              <div class="flex flex-row gap-5">
+            <div class="grid grid-col-1 gap-5">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
                 <input
                   class="w-full bg-[#68a097] rounded px-5 py-2 placeholder:text-[#82c8bd] focus:outline-none focus:bg-white focus:text-[#68a097] hover:bg-[#75a8a0]"
                   type="text"
