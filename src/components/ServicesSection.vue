@@ -63,7 +63,7 @@ const data = {
         >
           <!-- card loop -->
           <div
-            class="pt-12 pb-8 px-4 card w-full bg-[#c45158] hover:bg-[#c45f66] rounded"
+            class="pt-12 pb-8 px-4 card w-full bg-[#c45158] hover:bg-[#c45f66] rounded drop-shadow-sm"
             v-for="{ title, description, picUrl } in cards"
           >
             <img class="mx-auto icon" :src="picUrl" alt="service pic" />

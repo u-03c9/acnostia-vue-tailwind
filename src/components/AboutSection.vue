@@ -6,7 +6,7 @@ import BaseIcon from "../base/BaseIcon.vue";
 const cards = [
   {
     name: "Anton Petrov",
-    title: "Genral Manager",
+    title: "General Manager",
   },
   {
     name: "Kirl Donchev",
@@ -59,7 +59,7 @@ const data = {
         <div class="w-full grid gap-5 md:grid-cols-2 lg:grid-cols-4 mt-14">
           <!-- card loop -->
           <div
-            class="card w-full bg-[#4d3f4b] opacity-70 hover:opacity-100 pt-12 pb-8 rounded"
+            class="card w-full bg-[#4d3f4b] opacity-70 hover:opacity-100 pt-12 pb-8 rounded drop-shadow-md"
             v-for="{ name, title } in cards"
           >
             <img class="mx-auto profile" :src="ProfilePic" alt="Profile pic" />
